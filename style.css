@@ -1,0 +1,152 @@
+/* All devices */
+body {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+a:hover{
+    color: #83c67c;
+}
+.container{
+    background: #191919; 
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+    display: inline-block;
+}
+.dropdown-mobile{
+    border-top: 1px solid #303030;
+    display: none;
+    position: fixed;
+    background-color: #191919;
+    width: 100%;
+    overflow: auto;
+    z-index: 100;
+    top: 0;
+}
+.dropdown-mobile a {
+    color: #fff;
+    padding: 20px;
+    display: block;
+}
+.dropdown-mobile a:hover {
+    color: #83c67c;
+}
+.show {
+    display: inline-grid;
+    margin-top: 80px;
+}
+.hamburguer-menu{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.hamburguer-menu > * {
+    pointer-events: none;
+}
+.fa-bars, .fa-shopping-cart {
+    color: #fff; 
+    font-size: 30px!important;
+}
+.dropdown-mobile ul {
+    margin: 0; 
+    padding: 0;
+}
+.dropdown-mobile ul li{
+    border-bottom: 1px solid #303030;
+}
+.menu-desktop a{
+    margin: 20px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hamburguer-menu{
+        margin-right: auto;
+    }
+    .cart-icon{
+        margin-left: auto;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .menu-desktop{
+        display: none;
+    }
+    .logo{
+        margin: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .hamburguer-menu{
+        margin-right: auto;
+    }
+    .cart-icon{
+        margin-left: 100px;
+    }
+    .container{
+        padding: 0 20px;
+    }
+    .menu-desktop{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        margin: auto;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .hamburguer-menu{
+        display: none;
+    }
+    .cart-icon{
+        margin-left: 100px;
+    }
+    .container{
+        padding: 0 40px;
+    }
+    .menu-desktop{
+        display: block;
+        margin: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .hamburguer-menu{
+        display: none;
+    }
+    .container{
+        padding: 0 40px;
+    }
+    .cart-icon{
+        margin-left: 100px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .hamburguer-menu{
+        display: none;
+    }
+    .container{
+        padding: 0 40px;
+    }
+}

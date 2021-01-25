@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Header</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Start of Hamburguer menu on mobile --> 
+            <button onclick="OpenNavbar()" class="hamburguer-menu" >
+                <i class="fa fa-bars"></i>
+            </button>
+            <div id="dropdown-mobile" class="dropdown-mobile">
+                <ul>
+                    <li><a href="#">Loja</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Central de dúvidas</a></li>
+                </ul>
+            </div>
+            <!-- End of Hamburguer menu on mobile -->
+            <!-- Logo --> 
+            <a class="logo"> 
+                <img src="https://cdn.shopify.com/s/files/1/0251/4868/6432/files/logo-branca-sid_ce2ae6ff-1d58-4ad7-9fe4-5a9754b2d9c5_125x.png?v=1605065514"/>
+            </a>
+            <!-- Start of Inline menu on desktop --> 
+            <nav class="menu-desktop">
+                    <a href="#">Loja</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Blog</a></li>
+                    <a href="#">Central de dúvidas</a>
+            </nav>
+            <!-- End of Inline menu on desktop -->
+            <!-- Cart Icon -->  
+            <a href="#" class="cart-icon">
+                <i class="fa fa-shopping-cart"></i>
+            </a>
+        </div>
+    </header>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
